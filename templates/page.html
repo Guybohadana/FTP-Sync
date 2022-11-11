@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!--    <link rel="stylesheet" href="static/css/all.css">-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <center
+            style="font-size:35px; position:relative; margin:10px; position:static; margin-left:200px;
+            margin-top:20px">OVPN / FTP Connection
+    </center>
+    <div class="wrapper">
+        <div class="section">
+            <div class="hamburger">
+            </div>
+            <div class="sidebar">
+                <div class="profile">
+                    <h3>Client Connector</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/" class="active">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">Home</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="/">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">My Dashboard</span>
+                        </a>
+                    </li>
+                    <br>
+
+                    <li>
+                        <a href="/">
+                            <span class="icon"><i class="fas fa-database"></i></span>
+                            <span class="item">Database</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="/">
+                            <span class="icon"><i class="fas fa-user-shield"></i></span>
+                            <span class="item">Admin</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="/">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <!--            paste here my content -->
+                <div class="textWrapper" style="grid-template-columns: 0.8fr 0.6fr; width:60%">
+                    <h1 style="font-size:25px;">
+                        Current Connect
+                    </h1>
+<!--                    <a id="connectforti" class="button">Connect</a>-->
+                    <a id="disconnect" class="button_disconnect">Disconnect</a>
+                </div>
+                <div class="textWrapper">
+                    <h1 style="font-size:25px;">
+                        Oris
+                    </h1>
+                    <a id="connect oris" class="button connect">Connect</a>
+                    <a id="FTP oris" class="button transfer">FTP</a>
+<!--                    <a id="FTP-Oris" class="button">FTP</a>-->
+                </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Heron
+                </h1>
+                <a id="connect heron" class="button connect">Connect</a>
+                <a id="FTP heron" class="button transfer">FTP</a>
+            </div>
+                 <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Aurora
+                </h1>
+                <a id="connect aurora" class="button connect">Connect</a>
+                <a id="FTP aurora" class="button transfer">FTP</a>
+            </div>
+                 <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Alpaca
+                </h1>
+                <a id="connect alpaca" class="button connect">Connect</a>
+                <a id="FTP alpaca" class="button transfer">FTP</a>
+            </div>
+
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Dumbledore
+                </h1>
+                <a id="connect dumbledore" class="button connect">Connect</a>
+                <a id="FTP dumbledore" class="button transfer">FTP</a>
+            </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Chameleon
+                </h1>
+                    <a id="connect chameleon" class="button connect">Connect</a>
+                    <a id="FTP chameleon" class="button transfer">FTP</a>
+            </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Carmen
+                </h1>
+                    <a id="connect carmen" class="button connect">Connect</a>
+                    <a id="FTP carmen" class="button transfer">FTP</a>
+            </div>
+
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Columbus
+                </h1>
+                    <a id="connect columbus" class="button connect">Connect</a>
+                    <a id="FTP columbus" class="button transfer">FTP</a>
+            </div>
+
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Ibis-Black
+                </h1>
+                    <a id="connect ibis-black" class="button connect">Connect</a>
+                    <a id="FTP ibis-black" class="button transfer">FTP</a>
+            </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Ibis-Scarlet
+                </h1>
+                    <a id="connect ibis-scarlet" class="button connect">Connect</a>
+                    <a id="FTP ibis-scarlet" class="button transfer">FTP</a>
+            </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    Fox
+                </h1>
+                    <a id="connect fox" class="button connect">Connect</a>
+                    <a id="FTP fox" class="button transfer">FTP</a>
+            </div>
+                <div class="textWrapper">
+                <h1 style="font-size:25px;">
+                    All Customer
+                </h1>
+                <a id="connect all" class="button connect">Connect</a>
+                <a id="FTP all" class="button transfer">FTP</a>
+                    <h5>*All customer one by one</h5>
+
+            </div>
+            </div>
+                    <div class="progressTitle">
+                        <h3>Forti Status</h3>
+                    </div>
+                    <div class="progress">
+                      <div id="status" class="progressfill"></div>
+                          <div id="progress"></div>
+                    </div>
+                    <div class="FTP_Status">
+                        <h3>FTP Status</h3>
+                    </div>
+                    <div class="progress_ftp">
+                      <div id="status_ftp" class="progressfillftp"></div>
+                          <div id="progress_ftp"></div>
+                    </div>
+        </div>
+    </div>
+</body>
+<!-- post send id button name-->
+<script>
+    if (document.body.addEventListener) {
+        document.body.addEventListener('click', yourHandler, false);
+    }
+    function yourHandler(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        var target_id = target.id
+
+        var http = new XMLHttpRequest()
+        var url = "/connector"
+        var params = target_id
+        http.open("POST", url)
+        http.setRequestHeader('Content-type', 'application/dx-www-form-urlencode');
+        http.send(params)
+    }
+</script>
+
+<!--get status percent for progress bar-->
+<script>
+
+<!--const element = document.getElementById("connect-oris");-->
+<!--element.addEventListener("click", getStatus);-->
+
+document.querySelectorAll('.connect').forEach(item => {
+  item.addEventListener('click', event => {
+    getStatus()
+  })
+})
+
+async function getStatus() {
+  var timeout;
+  let get;
+
+
+  try {
+    const res = await fetch("/status");
+    get = await res.json();
+  } catch (e) {
+    console.error("Error: ", e);
+  }
+
+  if (get.status == "dead"){
+
+    return false;
+  }
+  document.getElementById("status").style.background='#66D266';
+  document.getElementById("status").innerHTML = get.status  + "&percnt;";
+  document.getElementById("status").style.width = get.status + "%";
+
+  if (get.status == 100){
+    document.getElementById("status").innerHTML = "Connected";
+    clearTimeout(timeout);
+    return false;
+  }
+
+   if (get.status == 404){
+   document.getElementById("status").style.background='red';
+   document.getElementById("status").style.width = "100%";
+   document.getElementById("status").innerHTML = "Failed";
+   clearTimeout(timeout);
+    return false;
+  }
+
+  timeout = setTimeout(getStatus, 4000);
+}
+
+</script>
+
+<!--Disconnect button-->
+<script>
+const elementftp = document.getElementById("disconnect");
+elementftp.addEventListener("click", disconnect);
+
+
+async function disconnect() {
+  var timeout;
+  let get;
+
+  try {
+    const res = await fetch("/dis");
+    get = await res.json();
+  } catch (e) {
+    console.error("Error: ", e);
+  }
+    document.getElementById("status").innerHTML = "Disconnected";
+    document.getElementById("status").style.width = "100%";
+    document.getElementById("status").style.background='red';
+    return false;
+}
+
+</script>
+
+
+<!-- get status of FTP trannfer-->
+<script>
+<!--const elementftp = document.getElementById("FTP-Heron");-->
+<!--elementftp.addEventListener("click", getStatusFTP);-->
+
+document.querySelectorAll('.transfer').forEach(item => {
+  item.addEventListener('click', event => {
+    getStatusFTP()
+  })
+})
+
+async function getStatusFTP() {
+  var timeout;
+  let get;
+
+  try {
+    const res = await fetch("/status-FTP");
+    get = await res.json();
+  } catch (e) {
+    console.error("Error: ", e);
+  }
+
+  document.getElementById("status").style.background='#66D266';
+  document.getElementById("status_ftp").innerHTML = get.status_ftp  + "&percnt;";
+  document.getElementById("status_ftp").style.width = get.status_ftp + "%";
+
+  if (get.status_ftp == 100){
+    document.getElementById("status_ftp").innerHTML = "Transferred";
+    clearTimeout(timeout);
+    return false;
+  }
+    if (get.status_ftp == 404){
+    document.getElementById("status_ftp").style.background='red';
+    document.getElementById("status_ftp").style.width = "100%";
+    document.getElementById("status_ftp").innerHTML = "Failed";
+    clearTimeout(timeout);
+    return false;
+  }
+
+
+  timeout = setTimeout(getStatusFTP, 2000);
+}
+
+</script>
+
+
+
+</html>
